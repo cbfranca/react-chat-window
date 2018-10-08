@@ -1,5 +1,5 @@
 {
-  "name": "react-chat-window",
+  "name": "react-chat-custom-window",
   "version": "1.0.9",
   "description": "react-live-chat React component",
   "main": "lib/index.js",
