@@ -16,7 +16,7 @@
  }
 
 .demo-test-area--title-sub {
-  color: #4e8cff;
+  color: #0DD1E3;
   padding-top: 10px;
 }
 
@@ -42,7 +42,7 @@
   border: none;
   line-height: 1.4;
   text-decoration: none;
-  background: #4e8cff;
+  background: #0DD1E3;
   color: white;
   padding: 6px 10px;
   font-size: 20px;
@@ -70,5 +70,5 @@
 .demo-test-area--info a {
   font-weight: 400;
   text-decoration: none;
-  color: #4e8cff;
+  color: #0DD1E3;
 }

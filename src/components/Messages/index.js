@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import TextMessage from './TextMessage'
 import EmojiMessage from './EmojiMessage'
 import chatIconUrl from './../../assets/chat-icon.svg'
+import kinvoIconUrl from './../../assets/kinvo.svg'
 
 
 class Message extends Component {
 
   _renderMessageOfType(type) {
-    switch(type) {
+    switch (type) {
       case 'text':
         return <TextMessage {...this.props.message} />
       case 'emoji':
@@ -15,7 +16,7 @@ class Message extends Component {
     }
   }
 
-  render () {
+  render() {
     let contentClassList = [
       "sc-message--content",
       (this.props.message.author === "me" ? "sent" : "received")
@@ -24,7 +25,7 @@ class Message extends Component {
       <div className="sc-message">
         <div className={contentClassList.join(" ")}>
           <div className="sc-message--avatar" style={{
-            backgroundImage: `url(${chatIconUrl})`
+            backgroundImage: `url(${kinvoIconUrl})`
           }}></div>
           {this._renderMessageOfType(this.props.message.type)}
         </div>

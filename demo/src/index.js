@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
-import {Launcher} from '../../src'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import { Launcher } from '../../src'
 import messageHistory from './messageHistory';
 import TestArea from './TestArea';
 import Header from './Header';
@@ -73,4 +73,4 @@ class Demo extends Component {
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector('#demo'))
