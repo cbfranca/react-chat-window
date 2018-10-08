@@ -52,7 +52,7 @@ class UserInput extends Component {
           ref={(e) => { this.userInput = e; }}
           onKeyDown={this.handleKey.bind(this)}
           contentEditable="true"
-          placeholder="Write a reply..."
+          placeholder={this.props.placeholder}
           className="sc-user-input--text"
         >
         </div>

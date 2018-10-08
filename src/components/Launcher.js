@@ -46,6 +46,7 @@ class Launcher extends Component {
           isOpen={isOpen}
           onClose={this.handleClick.bind(this)}
           showEmoji={this.props.showEmoji}
+          inputPlaceholder={this.props.inputPlaceholder}
         />
       </div>
     );
@@ -68,12 +69,14 @@ Launcher.propTypes = {
   isOpen: PropTypes.bool,
   handleClick: PropTypes.func,
   messageList: PropTypes.arrayOf(PropTypes.object),
-  showEmoji: PropTypes.bool
+  showEmoji: PropTypes.bool,
+  inputPlaceholder: PropTypes.string,
 };
 
 Launcher.defaultProps = {
   newMessagesCount: 0,
-  showEmoji: true
+  showEmoji: true,
+  inputPlaceholder: ''
 }
 
 export default Launcher;
