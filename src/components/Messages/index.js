@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import TextMessage from './TextMessage'
-import EmojiMessage from './EmojiMessage'
-import chatIconUrl from './../../assets/chat-icon.svg'
-import kinvoIconUrl from './../../assets/kinvo.svg'
+import TextMessage from './TextMessage';
+import OptionMessage from './OptionMessage';
+import EmojiMessage from './EmojiMessage';
+// import chatIconUrl from './../../assets/chat-icon.svg';
+import kinvoIconUrl from './../../assets/kinvo.svg';
 
 
 class Message extends Component {
@@ -11,6 +12,8 @@ class Message extends Component {
     switch (type) {
       case 'text':
         return <TextMessage {...this.props.message} />
+      case 'option':
+        return <OptionMessage {...this.props.message} />
       case 'emoji':
         return <EmojiMessage {...this.props.message} />
     }
