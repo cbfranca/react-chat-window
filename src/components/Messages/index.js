@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TextMessage from './TextMessage';
 import OptionMessage from './OptionMessage';
 import EmojiMessage from './EmojiMessage';
+import ImageMessage from './ImageMessage';
 // import chatIconUrl from './../../assets/chat-icon.svg';
 import kinvoIconUrl from './../../assets/kinvo.svg';
 
@@ -14,6 +15,8 @@ class Message extends Component {
         return <TextMessage {...this.props.message} />
       case 'option':
         return <OptionMessage {...this.props.message} />
+      case 'image':
+        return <ImageMessage {...this.props.message} />
       case 'emoji':
         return <EmojiMessage {...this.props.message} />
     }

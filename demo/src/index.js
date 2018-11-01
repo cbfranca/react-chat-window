@@ -70,7 +70,7 @@ class Demo extends Component {
         isOpen={this.state.isOpen}
         showEmoji
         showActionLink={true}
-        actionLinkLabel="Fale com o agente"
+        actionLinkLabel="Ainda com problemas? Fale com um agente."
         onActionLinkClick={this.onActionLinkClick}
       />
       <img className="demo-monster-img" src={monsterImgUrl} />

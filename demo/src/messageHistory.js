@@ -80,4 +80,15 @@ export default [
         }
       ]
     }
-  }]
+  },
+  {
+    type: "text",
+    author: "them",
+    data: { text: "Para cadastrar dividendos, segue exemplo abaixo:" }
+  },
+  {
+    type: "image",
+    author: "them",
+    data: { source: "https://uc6c12fa426075e12d28c99d5e18.previews.dropboxusercontent.com/p/orig/AAOntgJ3FTqCaKal711JgHoM5lnXupvXM-X8Y7uxXRE8C3oyu9eudx_3YA2DvPD9nIEOexvh2vLiNLRFDoOHS3W1TypsDqkZACz5Y4BA2D4K_1enEVHBPNZjCQIGtbOjLPdtmbZJt9F_TwPcjgeM_pEnpiwKh_JGdxz8aQKcEvyQiAIX4pKFEoCKqkFfEP9wWeHeRMPMHQKW0uUJ7me78US0/p.gif?size=1280x960&size_mode=3" }
+  }
+]
