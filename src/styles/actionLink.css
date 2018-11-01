@@ -1,0 +1,9 @@
+.sc-action-header{
+    background: #368FE8;
+    padding: 0.5em;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: small;
+}

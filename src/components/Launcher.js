@@ -47,6 +47,9 @@ class Launcher extends Component {
           onClose={this.handleClick.bind(this)}
           showEmoji={this.props.showEmoji}
           inputPlaceholder={this.props.inputPlaceholder}
+          onActionLinkClick={this.props.onActionLinkClick}
+          showActionLink={this.props.showActionLink}
+          actionLinkLabel={this.props.actionLinkLabel}
         />
       </div>
     );
@@ -71,12 +74,16 @@ Launcher.propTypes = {
   messageList: PropTypes.arrayOf(PropTypes.object),
   showEmoji: PropTypes.bool,
   inputPlaceholder: PropTypes.string,
+  onActionLinkClick: PropTypes.func,
+  showActionLink: PropTypes.bool,
+  actionLinkLabel: PropTypes.string,
 };
 
 Launcher.defaultProps = {
   newMessagesCount: 0,
   showEmoji: true,
-  inputPlaceholder: ''
+  inputPlaceholder: '',
+  showActionLink: false,
 }
 
 export default Launcher;
