@@ -49,6 +49,9 @@ class Demo extends Component {
     })
   }
 
+  onActionLinkClick = () => {
+    alert('Foo!');
+  }
   render() {
     return <div>
       <Header />
@@ -66,6 +69,9 @@ class Demo extends Component {
         handleClick={this._handleClick.bind(this)}
         isOpen={this.state.isOpen}
         showEmoji
+        showActionLink={true}
+        actionLinkLabel="Fale com o agente"
+        onActionLinkClick={this.onActionLinkClick}
       />
       <img className="demo-monster-img" src={monsterImgUrl} />
       <Footer />

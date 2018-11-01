@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import MessageList from './MessageList'
 import UserInput from './UserInput'
 import Header from './Header'
+import ActionLink from './ActionLink'
 
 
 class ChatWindow extends Component {
@@ -30,6 +31,11 @@ class ChatWindow extends Component {
           teamName={this.props.agentProfile.teamName}
           imageUrl={this.props.agentProfile.imageUrl}
           onClose={this.props.onClose}
+        />
+        <ActionLink
+          label={this.props.actionLinkLabel}
+          visible={this.props.showActionLink}
+          onClick={this.props.onActionLinkClick}
         />
         <MessageList
           messages={messageList}
